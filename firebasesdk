@@ -1,0 +1,19 @@
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCeGkFnTlaT5MQ8mD57sowJrHGeVuKVpjg",
+    authDomain: "react-project-17b4b.firebaseapp.com",
+    projectId: "react-project-17b4b",
+    storageBucket: "react-project-17b4b.appspot.com",
+    messagingSenderId: "420232848168",
+    appId: "1:420232848168:web:24af66d2147e126a98e61d"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>

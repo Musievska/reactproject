@@ -1,4 +1,4 @@
-import firebase from 'firebase';
+import firebase from 'firebase'
 
 const firebaseConfig = {
     apiKey: "AIzaSyCeGkFnTlaT5MQ8mD57sowJrHGeVuKVpjg",
@@ -9,8 +9,9 @@ const firebaseConfig = {
     appId: "1:420232848168:web:24af66d2147e126a98e61d"
 };
 
-const firebaseApp = firebase.initializeApp(firebaseConfig);
+const firebaseApp = firebase.initializeApp(firebaseConfig)
 
-const storage = firebase.storage();
+const storage = firebase.storage()
+const db = firebaseApp.firestore()
 
-export storage
+export { storage, db }

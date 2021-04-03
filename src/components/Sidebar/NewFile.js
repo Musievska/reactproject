@@ -58,7 +58,6 @@ const NewFile = () => {
             console.log(snapshot)
 
             storage.ref('files').child(file.name).getDownloadURL().then(url => {
-                //post image inside the db
 
                 db.collection('myFiles').add({
                     timestamp: firebase.firestore.FieldValue.serverTimestamp(),

@@ -2,6 +2,7 @@ import React from 'react';
 import '../../styles/Header.css'
 
 import GoogleDriveIcon from '../../media/Google-Drive-icon.png'
+
 import ExpandIcon from '@material-ui/icons/ExpandMore';
 import SearchIcon from '@material-ui/icons/Search';
 import HelpOutLineIcon from '@material-ui/icons/HelpOutline';

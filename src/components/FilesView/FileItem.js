@@ -6,7 +6,7 @@ const monthNames = ['January', 'February', 'March', 'April', 'May', 'June', 'Jul
     'August', 'September', 'October', 'November', 'December'];
 
 const FileItem = ({ id, caption, timestamp, fileUrl, size }) => {
-    const fileDate = `${timestamp?.toDate().getDate()} ${monthNames[timestamp?.toDate().getMonth() + 1]} ${timestamp?.toDate().getFullYear()}`;
+    const fileDate = `${timestamp?.toDate().getDate()} ${monthNames[timestamp?.toDate().getMonth()]} ${timestamp?.toDate().getFullYear()}`;
 
     const getReadableFileSize = (fileSizeInBytes) => {
         let i = -1;
@@ -20,8 +20,17 @@ const FileItem = ({ id, caption, timestamp, fileUrl, size }) => {
     };
 
     return (
-        <div className="">
-
+        <div className='fileItem'>
+            <a href={fileUrl} target="_blank" download rel="noreferrer">
+                <div className="fileItem--left">
+                    <IncertDriveFileIcon />
+                    <p>{caption}</p>
+                </div>
+                <div className="fileItem--right">
+                    <p>{fileDate}</p>
+                    <p>{getReadableFileSize(size)}</p>
+                </div>
+            </a>
         </div>
     )
 }

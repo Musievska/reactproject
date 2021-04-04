@@ -1,10 +1,10 @@
-import React, { useState } from 'react'
-import '../../styles/NewFile.css'
+import React, { useState } from 'react';
+import '../../styles/NewFile.css';
 
 import AddIcon from '@material-ui/icons/Add';
 
-import firebase from 'firebase'
-import { storage, db } from '../../firebase'
+import firebase from 'firebase';
+import { storage, db } from '../../firebase';
 
 import { makeStyles } from '@material-ui/core/styles';
 import Modal from '@material-ui/core/Modal';
@@ -109,4 +109,4 @@ const NewFile = () => {
     )
 }
 
-export default NewFile
+export default NewFile;

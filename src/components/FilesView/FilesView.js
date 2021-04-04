@@ -2,11 +2,12 @@ import React, { useState, useEffect } from 'react';
 import { db } from '../../firebase';
 import FileCard from './FileCard';
 import FileItem from './FileItem';
+import '../../styles/FilesView.css';
 
 
 
 
-export const FilesView = () => {
+const FilesView = () => {
     const [files, setFiles] = useState([]);
 
     useEffect(() => {
@@ -25,7 +26,7 @@ export const FilesView = () => {
             <div className="fileView__row">
                 {
                     files.slice(0, 5).map(({ id, item }) => (
-                        <FileCard name={item.caption}/>
+                        <FileCard name={item.caption} />
                     ))
                 }
             </div>
@@ -42,7 +43,7 @@ export const FilesView = () => {
             </div>
             {
                 files.map(({ id, item }) => (
-                    <FileItem id={id} caption={item.caption} timestamp={item.timestamp} fileUrl={item.fileUrl} size={item.size}/>
+                    <FileItem id={id} caption={item.caption} timestamp={item.timestamp} fileUrl={item.fileUrl} size={item.size} />
                 ))
             }
         </div>

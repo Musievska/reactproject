@@ -1,6 +1,8 @@
 import React from 'react';
+
 import InsertDriveFileIcon from '@material-ui/icons/InsertDriveFile';
 
+import '../../styles/FileCard.css';
 
 
 const FileCard = ({ name }) => {
